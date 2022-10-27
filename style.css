@@ -32,15 +32,18 @@ body{
 .btn::before{
     content: "";
     position: absolute;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
     width: 0;
     height: 0;
     left: var(--xPosition);
     top: var(--yPosition);
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    transition: width 2s, height 2s;
+    transition: width 1s, height 1s ;
 }
 
-
+.btn:hover::before{
+    width: 300px;
+    height: 300px;
+}
